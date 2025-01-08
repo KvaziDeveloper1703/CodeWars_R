@@ -11,18 +11,13 @@
 #Ввод: 'word' → Вывод: 'drow'
 
 solution <- function(given_string) {
-    if (given_string == "") {
-        return("")
-    }
+  if (given_string == "") {
+    return("")
+  }
 
-    characters <- strsplit(given_string, NULL)[[1]]
-    reversed_characters <- c()
+  characters <- strsplit(given_string, NULL)[[1]]
+  reversed_characters <- rev(characters)
+  reversed_string <- paste(reversed_characters, collapse = "")
 
-    for (i in length(characters):1) {
-        reversed_characters <- c(reversed_characters, characters[i])
-    }
-
-    reversed_string <- paste(reversed_characters, collapse = "")
-  
-    return(reversed_string)
+  return(reversed_string)
 }
