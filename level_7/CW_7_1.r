@@ -6,8 +6,13 @@ count_vowels <- function(input_string) {
   vowels <- c("a", "e", "i", "o", "u", "y")
 
   characters <- strsplit(input_string, NULL)[[1]]
-  
+
   vowel_count <- sum(characters %in% vowels)
   
   return(vowel_count)
 }
+
+input_string <- "hello my friend"
+result <- count_vowels(input_string)
+
+print(paste("Number of vowels:", result))
