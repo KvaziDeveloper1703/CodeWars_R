@@ -12,7 +12,6 @@
 #Пример:
 #"test" → "es"
 
-
 get_middle_character <- function(given_string) {
   length <- nchar(given_string)
   middle <- length %/% 2
@@ -26,5 +25,3 @@ get_middle_character <- function(given_string) {
 
 print(get_middle_character("hello"))
 print(get_middle_character("world"))
-print(get_middle_character("test"))
-print(get_middle_character("middle"))
