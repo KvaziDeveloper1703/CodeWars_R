@@ -1,23 +1,35 @@
-# Write an R function that takes an integer as input and returns:
-#+ "Even" if the number is even.
-#+ Odd" if the number is odd.
+# Write a function that takes an integer as input and returns:
+# + "Even" if the number is even;
+# + Odd" if the number is odd.
 
-#Example:
-#Input: 4 → Output: "Even"
-#Input: 7 → Output: "Odd"
+# Examples:
+# Input: 4
+# Output: "Even"
 
-#Напишите функцию на R, которая принимает целое число и возвращает:
-#+ "Even", если число чётное.
-#+ Odd", если число нечётное.
+# Input: 7
+# Output: "Odd"
 
-#Пример:
-#Ввод: 4 → Вывод: "Even"
-#Ввод: 7 → Вывод: "Odd"
+# Напишите функцию, которая принимает целое число и возвращает:
+# + "Even", если число чётное;
+# + Odd", если число нечётное.
+
+# Примеры:
+# Ввод: 4
+# Вывод: "Even"
+
+# Ввод: 7
+# Вывод: "Odd"
 
 even_or_odd <- function(n) {
   if (n %% 2 == 0) {
-    return("Even")
+    return("even")
   } else {
-    return("Odd")
+    return("odd")
   }
+}
+
+test_values <- c(1, 2, 3, 4, 5, 10, 15, 20)
+
+for (value in test_values) {
+  print(paste("Number:", value, "is", even_or_odd(value)))
 }
