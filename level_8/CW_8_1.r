@@ -20,6 +20,8 @@
 # Ввод: 7
 # Вывод: "Odd"
 
+# https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
+
 even_or_odd <- function(given_number) {
   if (given_number %% 2 == 0) {
     return("even")
