@@ -14,6 +14,8 @@
 # Ввод: [1, -4, 7, 12]
 # Вывод: 20
 
+# https://www.codewars.com/kata/5715eaedb436cf5606000381
+
 positive_sum <- function(given_numbers) {
   positive_numbers <- given_numbers[given_numbers > 0]
 
