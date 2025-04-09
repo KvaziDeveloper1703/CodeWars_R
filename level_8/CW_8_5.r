@@ -1,17 +1,16 @@
-#Write an R function that converts an integer into a string.
+# Write a function that converts an integer into a string.
 
-#Examples:
-#Input: 123 → Output: "123"
-#Input: 999 → Output: "999"
-#nput: -100 → Output: "-100"
+# Напишите функцию, которая преобразует целое число в строку.
 
-#Напишите функцию на R, которая преобразует целое число в строку.
+# https://www.codewars.com/kata/5265326f5fda8eb1160004c8
 
-#Примеры:
-#Ввод: 123 → Вывод: "123"
-#Ввод: 999 → Вывод: "999"
-#вод: -100 → Вывод: "-100"
+number_to_string <- function(given_number) {
+  return(as.character(given_number))
+}
 
-number_to_string <- function(number) {
-  return(as.character(number))
+test_numbers <- c(123, -456, 0, 789.65, 100000)
+
+for (test_number in test_numbers) {
+  result <- number_to_string(test_number)
+  print(paste("Original number:", test_number, "Converted to string:", result))
 }
