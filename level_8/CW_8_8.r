@@ -1,15 +1,16 @@
-#Write a function that takes a number (integer or decimal) and returns its opposite (additive inverse). The opposite of a number is the same number with its sign flipped.
+# Write a function that takes a number and returns its opposite.
 
-#For example:
-#Input: 5, Output: -5
-#Input: -3.5, Output: 3.5
+# Напишите функцию, которая принимает число и возвращает его противоположное.
 
-#Напишите функцию, которая принимает число (целое или дробное) и возвращает его противоположное (аддитивное обратное). Противоположное число – это то же самое число с изменённым знаком.
-
-#Например:
-#Вход: 5, Выход: -5
-#Вход: -3.5, Выход: 3.5
+# https://www.codewars.com/kata/56dec885c54a926dcd001095
 
 opposite <- function(number) {
   return(-number)
+}
+
+test_numbers <- c(10, -5, 0, 123.45, -100)
+
+for (test_number in test_numbers) {
+  result <- opposite(test_number)
+  print(paste("Original number:", test_number, "Opposite:", result))
 }
