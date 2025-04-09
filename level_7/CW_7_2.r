@@ -1,14 +1,20 @@
-#Write a function that removes all vowels from a given string. The function should return a new string where the vowels "a", "e", "i", "o", "u" and "y" (case-insensitive) have been removed.
+# Write a function that removes all vowels from a given string.
+# The function should return a new string where the vowels
+# "a", "e", "i", "o", "u" and "y" have been removed.
 
-#For example:
-#Input: "This website is for losers LOL!"
-#Output: "Ths wbst s fr lsrs LL!"
+# Example:
+# Input: "This website is for losers LOL!"
+# Output: "Ths wbst s fr lsrs LL!"
 
-#Напишите функцию, которая удаляет все гласные из заданной строки. Функция должна возвращать новую строку, из которой удалены буквы "a", "e", "i", "o", "u" и "y" (без учета регистра).
+# Напишите функцию, которая удаляет все гласные из заданной строки.
+# Функция должна возвращать новую строку, из которой удалены буквы 
+# "a", "e", "i", "o", "u" и "y".
 
-#Пример:
-#Вход: "This website is for losers LOL!"
-#Выход: "Ths wbst s fr lsrs LL!"
+# Пример:
+# Вход: "This website is for losers LOL!"
+# Выход: "Ths wbst s fr lsrs LL!"
+
+# https://www.codewars.com/kata/52fba66badcd10859f00097e
 
 remove_vowels <- function(input_string) {
   vowels <- "[aeiouyAEIOUY]"
