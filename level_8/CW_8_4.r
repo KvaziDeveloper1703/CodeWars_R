@@ -1,14 +1,16 @@
-#Write an R function that takes a string as input and returns the string reversed.
+# Write a function that takes a string as input and returns the string reversed.
 
-#Examples:
-#Input: 'world' → Output: 'dlrow'
-#Input: 'word' → Output: 'drow'
+# Example:
+# Input: 'word'
+# Output: 'drow'
 
-#Напишите функцию на R, которая принимает строку и возвращает её в перевёрнутом виде.
+# Напишите функцию, которая принимает строку и возвращает её в развёрнутом виде.
 
-#Примеры:
-#Ввод: 'world' → Вывод: 'dlrow'
-#Ввод: 'word' → Вывод: 'drow'
+# Пример:
+# Ввод: 'word'
+# Вывод: 'drow'
+
+# https://www.codewars.com/kata/5168bb5dfe9a00b126000018
 
 solution <- function(given_string) {
   if (given_string == "") {
@@ -20,4 +22,11 @@ solution <- function(given_string) {
   reversed_string <- paste(reversed_characters, collapse = "")
 
   return(reversed_string)
+}
+
+test_strings <- c("hello", "world", "12345", "", "abcde")
+
+for (test_string in test_strings) {
+  result <- solution(test_string)
+  print(paste("Original:", test_string, "Reversed:", result))
 }
