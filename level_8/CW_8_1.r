@@ -20,8 +20,8 @@
 # Ввод: 7
 # Вывод: "Odd"
 
-even_or_odd <- function(n) {
-  if (n %% 2 == 0) {
+even_or_odd <- function(given_number) {
+  if (given_number %% 2 == 0) {
     return("even")
   } else {
     return("odd")
