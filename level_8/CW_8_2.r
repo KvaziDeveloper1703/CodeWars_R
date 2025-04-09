@@ -23,6 +23,8 @@
 # Ввод: -5
 # Вывод: -5
 
+# https://www.codewars.com/kata/55685cd7ad70877c23000102
+
 make_negative <- function(given_number) {
   if (given_number > 0) {
     return(-given_number)
