@@ -2,6 +2,8 @@
 
 # Дано целое число. Определите, является ли оно квадратным.
 
+# https://www.codewars.com/kata/54c27a33fb7da0db0100040e
+
 is_square <- function(given_number) {
   if (given_number < 0) {
     return(FALSE)
