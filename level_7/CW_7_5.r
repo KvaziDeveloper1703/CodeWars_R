@@ -18,6 +18,8 @@
 # Ввод: "1 2 -3 4 5"
 # Выход: "5 -3"
 
+# https://www.codewars.com/kata/554b4ac871d6813a03000035
+
 high_and_low <- function(numbers_string) {
   numbers <- as.numeric(unlist(strsplit(numbers_string, " ")))
 
