@@ -16,6 +16,8 @@
 # Ввод: "abcd"
 # Вывод: "A-Bb-Ccc-Dddd"
 
+# https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
+
 accum <- function(given_string) {
   chars <- strsplit(given_string, "")[[1]]
 
