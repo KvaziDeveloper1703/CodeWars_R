@@ -8,6 +8,8 @@
 # Если длина строки нечётная, вернуть один средний символ.
 # Если длина строки чётная, вернуть два средних символа.
 
+# https://www.codewars.com/kata/56747fd5cb988479af000028
+
 get_middle_character <- function(given_string) {
   length <- nchar(given_string)
   middle <- length %/% 2
