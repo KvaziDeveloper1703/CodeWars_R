@@ -1,16 +1,12 @@
-# You are given a non-empty string. Your task is to return its middle character(s).
-#If the string's length is odd, return the middle character.
-#If the string's length is even, return the middle two characters.
+# You are given a non-empty string.
+# Your task is to return its middle character(s).
+# If the string's length is odd, return the middle character.
+# If the string's length is even, return the middle two characters.
 
-#Example:
-#"test" → "es"
-
-#Вам дана непустая строка. Ваша задача — вернуть её средний символ(ы).
-#Если длина строки нечётная, вернуть один средний символ.
-#Если длина строки чётная, вернуть два средних символа.
-
-#Пример:
-#"test" → "es"
+# Вам дана непустая строка.
+# Ваша задача — вернуть её средний символ(ы).
+# Если длина строки нечётная, вернуть один средний символ.
+# Если длина строки чётная, вернуть два средних символа.
 
 get_middle_character <- function(given_string) {
   length <- nchar(given_string)
