@@ -1,22 +1,20 @@
-#Write a function accum that transforms a string as follows:
+# Write a function that transforms a string as follows:
+# + Each character is repeated as many times as its position;
+# + The first letter is uppercase, the rest are lowercase;
+# + Parts are joined with "-".
 
-#Each character is repeated as many times as its position (starting from 1).
-#The first letter is uppercase, the rest are lowercase.
-#Parts are joined with "-".
+# Example:
+# Input: "abcd"
+# Output: "A-Bb-Ccc-Dddd"
 
-#Examples:
-#accum("abcd") → "A-Bb-Ccc-Dddd"
-#accum("RqaEzty") → "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+# Напишите функцию, которая преобразует строку следующим образом:
+# Каждый символ повторяется столько раз, какова его позиция;
+# Первый символ — в верхнем регистре, остальные — в нижнем;
+# Все части объединяются через "-".
 
-#Напишите функцию accum, которая преобразует строку следующим образом:
-
-#Каждый символ повторяется столько раз, какова его позиция (начиная с 1).
-#Первый символ — в верхнем регистре, остальные — в нижнем.
-#Все части объединяются через "-".
-
-#Примеры:
-#accum("abcd") → "A-Bb-Ccc-Dddd"
-#accum("RqaEzty") → "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+# Пример:
+# Ввод: "abcd"
+# Вывод: "A-Bb-Ccc-Dddd"
 
 accum <- function(given_string) {
   chars <- strsplit(given_string, "")[[1]]
