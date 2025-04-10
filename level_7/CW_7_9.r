@@ -1,24 +1,34 @@
-#Write a function XO that checks whether a string has the same number of 'x' and 'o'.
+# Write a function that checks whether a string
+# has the same number of 'x' and 'o'.
+# + The function should return true if the counts of 'x'
+# and 'o' are equal, otherwise return false.
+# + The check is case-insensitive.
+# + The string may contain any characters.
+# + If there are no 'x' and 'o' at all, return true.
 
-#The function should return true if the counts of 'x' and 'o' are equal, otherwise return false.
-#The check is case-insensitive.
-#The string may contain any characters.
-#If there are no 'x' and 'o' at all, return true.
+# Examples:
+# Input: "ooxx"
+# Outout: true
 
-#Examples:
-#XO("ooxx") → true
-#XO("xooxx") → false
+# Input: "xooxx"
+# Outout: false
 
-#Напишите функцию XO, которая проверяет, содержит ли строка одинаковое количество 'x' и 'o'.
+# Напишите функцию, которая проверяет, содержит ли строка
+# одинаковое количество 'x' и 'o'.
+# + Функция должна вернуть true, если количество 'x'
+# и 'o' одинаково, и false в противном случае.
+# + Регистр символов не имеет значения.
+# + Строка может содержать любые символы.
+# + Если 'x' и 'o' вообще нет, вернуть true.
 
-#Функция должна вернуть true, если количество 'x' и 'o' одинаково, и false в противном случае.
-#Регистр символов не имеет значения.
-#Строка может содержать любые символы.
-#сли 'x' и 'o' вообще нет, вернуть true.
+# Примеры:
+# Ввод: "ooxx"
+# Вывод: true
 
-#Примеры:
-#XO("ooxx") → true
-#XO("xooxx") → false
+# Ввод: "xooxx"
+# Вывод: false
+
+# https://www.codewars.com/kata/55908aad6620c066bc00002a
 
 xo <- function(given_string) {
   given_string <- tolower(given_string)
